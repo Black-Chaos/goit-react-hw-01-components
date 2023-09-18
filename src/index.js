@@ -12,6 +12,11 @@ const theme = {
     defaultBgTable: '#f3f3f3',
     bgCard: '#fff',
   },
+  iconSize: {
+    large: '100px',
+    mid: '50px',
+    little: '30px',
+  }
 };
 
 ReactDOM.createRoot(document.getElementById('root')).render(

@@ -1,9 +1,9 @@
 import styled from "@emotion/styled";
 
 export const Thumb = styled.div`
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 20px;
+  width: ${({size='mid', theme}) => (theme.iconSize[size])};
+  height: ${({size='mid', theme}) => theme.iconSize[size]};
+  // margin: 0 auto 20px;
 `;
 
 export const Img = styled.img`

@@ -11,4 +11,5 @@ export const Description = styled.div`
   padding: 40px;
   display: grid;
   gap: 12px;
+  place-items: center;
 `;
