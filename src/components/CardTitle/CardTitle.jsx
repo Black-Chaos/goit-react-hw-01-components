@@ -1,6 +1,6 @@
 // import PropTypes from "prop-types";
 import { Title } from "./CardTitle.styled";
 
-export function CardTitle({ name }) {
-  return <Title>{name}</Title>;
+export function CardTitle({ title }) {
+  return <Title>{title}</Title>;
 }

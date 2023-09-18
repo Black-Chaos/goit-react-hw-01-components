@@ -59,12 +59,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.qwe:last-child {
-  margin-bottom: 40px;
-  display: grid;
-  gap: 20px;
-  background-color: #bdbdbd;
-  flex: 1 1 100px;
-  font-weight: 700;
-}

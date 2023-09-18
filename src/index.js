@@ -8,7 +8,9 @@ const theme = {
   colors: {
     title: '#111',
     text: '#bdbdbd',
+    bgUserColumn: '#e7ecf2',
     defaultBgTable: '#f3f3f3',
+    bgCard: '#fff',
   },
 };
 

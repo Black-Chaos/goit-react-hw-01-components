@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const Item = styled.li`
-  padding: 16px;
+  padding: 12px 8px;
   min-width: 50px;
   flex: 1 0;
   display: grid;

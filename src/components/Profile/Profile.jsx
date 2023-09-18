@@ -12,7 +12,7 @@ export function Profile({ user: { username, tag, location, avatar, stats } }) {
     <ProfileCard>
       <Description>
         <Avatar avatar={avatar} tag={tag} />
-        <CardTitle name={username} />
+        <CardTitle title={username} />
         <DescriptionUser text={`@${tag}`} />
         <DescriptionUser text={location} />
       </Description>

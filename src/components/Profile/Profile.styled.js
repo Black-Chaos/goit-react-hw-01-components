@@ -1,11 +1,10 @@
 import styled from "@emotion/styled";
 
 export const ProfileCard = styled.div`
-  width: 300px;
   text-align: center;
   border-radius: 4px;
   box-shadow: 4px 4px 8px ${({ theme }) => theme.colors.text};
-;
+  background-color: ${({ theme }) => theme.colors.bgCard};
 `;
 
 export const Description = styled.div`
