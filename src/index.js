@@ -7,7 +7,7 @@ import './index.css';
 const theme = {
   colors: {
     title: '#111',
-    text: '#bdbdbd',
+    text: '#979797',
     bgUserColumn: '#e7ecf2',
     defaultBgTable: '#f3f3f3',
     bgCard: '#fff',
@@ -16,7 +16,7 @@ const theme = {
     large: '100px',
     mid: '50px',
     little: '30px',
-  }
+  },
 };
 
 ReactDOM.createRoot(document.getElementById('root')).render(
