@@ -12,4 +12,9 @@ export const Description = styled.div`
   display: grid;
   gap: 12px;
   place-items: center;
+  p {
+    color: ${({ theme }) => theme.colors.text};
+    font-weight: 500;
+    font-size: 18px;
+  }
 `;

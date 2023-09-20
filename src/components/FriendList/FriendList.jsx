@@ -1,27 +1,15 @@
 import PropTypes from 'prop-types';
 import { ListOfFriends } from './FriendList.styled';
-import { FriendItem } from './FriendList.styled';
-import { Led } from './FriendList.styled';
-import { Avatar } from 'components/Profile/Avatar/Avatar';
-import { CardTitle } from 'components/CardTitle/CardTitle';
+import { FriendListItem } from './FriendListItem';
 
-export function FriendList({friends=[]}) {
-    return (
-      <ListOfFriends>
-        {friends.map(({
-          avatar,
-          name,
-          isOnline,
-          id,
-        }) => (
-            <FriendItem key={id} >
-                <Led isOnline={isOnline}/>
-                <Avatar avatar={avatar} tag={name} size={'mid'} />
-                <CardTitle title={name}/>
-            </FriendItem>
-        ))}
-      </ListOfFriends>
-    );
+export function FriendList({ friends = [] }) {
+  return (
+    <ListOfFriends>
+      {friends.map(({ avatar, name, isOnline, id }) => (
+        <FriendListItem key={id} isOnline={isOnline} avatar={avatar} name={name}/>
+      ))}
+    </ListOfFriends>
+  );
 }
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
@@ -30,6 +18,6 @@ FriendList.propTypes = {
       name: PropTypes.string.isRequired,
       isOnline: PropTypes.bool.isRequired,
       id: PropTypes.number.isRequired,
-    })
-  ),
+    }).isRequired
+  ).isRequired,
 };

@@ -13,4 +13,5 @@ export function StatsItem({ name, date, units='' }) {
 StatsItem.propTypes = {
   name: PropTypes.string.isRequired,
   date: PropTypes.number.isRequired,
+  units: PropTypes.string,
 }
